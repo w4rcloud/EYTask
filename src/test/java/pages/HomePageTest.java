@@ -11,14 +11,14 @@ import static org.testng.Assert.assertTrue;
 
 public class HomePageTest {
 
-    private HomePage homePage;
+    private HomePage page;
     private WebDriver driver;
 
     @BeforeClass(description = "Home Page tests start")
     public void setUp() {
         driver = new ChromeDriver();
-        homePage = new HomePage(driver);
-        driver.get(homePage.getURL());
+        page = new HomePage(driver);
+        driver.get(page.getURL());
         driver.manage().window().maximize();
     }
 
@@ -29,7 +29,7 @@ public class HomePageTest {
 
     @Test(description = "Confirm Home Page contains 'Sign In' button")
     public void homePageTC1() {
-        String signIn = homePage.getSignInButton().getText();
+        String signIn = page.getSignInButton().getText();
         assertTrue(signIn.equalsIgnoreCase("Sign In"));
     }
 
@@ -37,7 +37,7 @@ public class HomePageTest {
     public void homePageTC2() {
         String authenticationPageUrl = "http://automationpractice.com/index" +
                 ".php?controller=authentication&back=my-account";
-        homePage.clickOnSignInButton();
+        page.clickOnSignInButton();
         assertEquals(authenticationPageUrl, driver.getCurrentUrl());
     }
 }
