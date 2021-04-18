@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EYTask(failed)">
+    <classes>
+      <class name="pages.AccountCreationPageTest">
+        <methods>
+          <include name="accCreationPageTC23"/>
+          <include name="accCreationPageTC6"/>
+          <include name="accCreationPageTC22"/>
+          <include name="accCreationPageTC21"/>
+          <include name="accCreationPageTC9"/>
+          <include name="accCreationPageTC2"/>
+          <include name="accCreationPageTC7"/>
+          <include name="accCreationPageTC8"/>
+          <include name="accCreationPageTC5"/>
+          <include name="accCreationPageTC3"/>
+          <include name="accCreationPageTC4"/>
+          <include name="accCreationPageTC1"/>
+          <include name="accCreationPageTC17"/>
+          <include name="setUp"/>
+          <include name="accCreationPageTC13"/>
+          <include name="accCreationPageTC19"/>
+          <include name="accCreationPageTC18"/>
+          <include name="accCreationPageTC31"/>
+          <include name="accCreationPageTC16"/>
+          <include name="accCreationPageTC15"/>
+          <include name="accCreationPageTC14"/>
+          <include name="accCreationPageTC12"/>
+          <include name="accCreationPageTC11"/>
+          <include name="accCreationPageTC10"/>
+          <include name="accCreationPageTC32"/>
+          <include name="accCreationPageTC30"/>
+          <include name="tearDown"/>
+          <include name="accCreationPageTC28"/>
+          <include name="accCreationPageTC24"/>
+          <include name="accCreationPageTC29"/>
+          <include name="accCreationPageTC20"/>
+          <include name="accCreationPageTC27"/>
+          <include name="accCreationPageTC26"/>
+          <include name="accCreationPageTC25"/>
+        </methods>
+      </class> <!-- pages.AccountCreationPageTest -->
+    </classes>
+  </test> <!-- EYTask(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

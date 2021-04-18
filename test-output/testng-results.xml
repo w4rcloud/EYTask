@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="32" passed="32" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-18T12:08:50Z" name="Default Suite" finished-at="2021-04-18T12:10:31Z" duration-ms="100630">
+    <groups>
+    </groups>
+    <test started-at="2021-04-18T12:08:50Z" name="EYTask" finished-at="2021-04-18T12:10:31Z" duration-ms="100630">
+      <class name="pages.AccountCreationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:08:50Z" name="setUp" finished-at="2021-04-18T12:09:05Z" duration-ms="15288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="accCreationPageTC1()[pri:1, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:05Z" name="accCreationPageTC1" description="Confirm account creation impossible if mandatory fields left without input data" finished-at="2021-04-18T12:09:08Z" duration-ms="2495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC1 -->
+        <test-method signature="accCreationPageTC2()[pri:2, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:08Z" name="accCreationPageTC2" description="Confirm &#039;Title&#039; radio buttons work properly" finished-at="2021-04-18T12:09:08Z" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC2 -->
+        <test-method signature="accCreationPageTC3()[pri:3, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:08Z" name="accCreationPageTC3" description="Confirm account creation impossible if &#039;First name&#039; field populated with invalid characters" finished-at="2021-04-18T12:09:10Z" duration-ms="2264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC3 -->
+        <test-method signature="accCreationPageTC4()[pri:4, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:10Z" name="accCreationPageTC4" description="Confirm account creation impossible if &#039;First name&#039; field exceeds character limit (32)" finished-at="2021-04-18T12:09:14Z" duration-ms="3252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC4 -->
+        <test-method signature="accCreationPageTC5()[pri:5, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:14Z" name="accCreationPageTC5" description="Confirm number of errors decreases by one if &#039;First name&#039; field gets populated with valid data" finished-at="2021-04-18T12:09:16Z" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC5 -->
+        <test-method signature="accCreationPageTC6()[pri:6, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:16Z" name="accCreationPageTC6" description="Confirm account creation impossible if &#039;Last name&#039; field gets populated with invalid characters" finished-at="2021-04-18T12:09:19Z" duration-ms="2788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC6 -->
+        <test-method signature="accCreationPageTC7()[pri:7, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:19Z" name="accCreationPageTC7" description="Confirm account creation impossible if &#039;Last name&#039; field exceeds character limit (32)" finished-at="2021-04-18T12:09:22Z" duration-ms="3635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC7 -->
+        <test-method signature="accCreationPageTC8()[pri:8, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:22Z" name="accCreationPageTC8" description="Confirm number of errors decreases by one if &#039;Last name&#039; field gets populated with valid data" finished-at="2021-04-18T12:09:25Z" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC8 -->
+        <test-method signature="accCreationPageTC9()[pri:9, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:25Z" name="accCreationPageTC9" description="Confirm account creation impossible if &#039;Email&#039; field gets populated with invalid email address" finished-at="2021-04-18T12:09:27Z" duration-ms="1912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC9 -->
+        <test-method signature="accCreationPageTC10()[pri:10, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:27Z" name="accCreationPageTC10" description="Confirm account creation impossible if &#039;Email&#039; field gets populated with email address from an existing account" finished-at="2021-04-18T12:09:29Z" duration-ms="1854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC10 -->
+        <test-method signature="accCreationPageTC11()[pri:11, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:29Z" name="accCreationPageTC11" description="Confirm number of errors decreases by one if &#039;Email&#039; field gets populated with valid data" finished-at="2021-04-18T12:09:31Z" duration-ms="2548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC11 -->
+        <test-method signature="accCreationPageTC12()[pri:12, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:31Z" name="accCreationPageTC12" description="Confirm &#039;Sign up for our newsletter!&#039; &amp; &#039;Receive special offers from our partners!&#039; checkboxes work properly - checking" finished-at="2021-04-18T12:09:32Z" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC12 -->
+        <test-method signature="accCreationPageTC13()[pri:13, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:32Z" name="accCreationPageTC13" description="Confirm &#039;Sign up for our newsletter!&#039; &amp; &#039;Receive special offers from our partners!&#039; checkboxes work properly - unchecking" finished-at="2021-04-18T12:09:32Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC13 -->
+        <test-method signature="accCreationPageTC14()[pri:14, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:32Z" name="accCreationPageTC14" description="Confirm account creation impossible if &#039;Company&#039; field exceeds character limit (64)" finished-at="2021-04-18T12:09:34Z" duration-ms="2533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC14 -->
+        <test-method signature="accCreationPageTC15()[pri:15, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:34Z" name="accCreationPageTC15" description="Confirm account creation impossible if &#039;Address&#039; field gets populated with invalid characters" finished-at="2021-04-18T12:09:37Z" duration-ms="2255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC15 -->
+        <test-method signature="accCreationPageTC16()[pri:16, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:37Z" name="accCreationPageTC16" description="Confirm account creation impossible if &#039;Address&#039; field exceeds character limit (64)" finished-at="2021-04-18T12:09:40Z" duration-ms="3607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC16 -->
+        <test-method signature="accCreationPageTC17()[pri:17, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:40Z" name="accCreationPageTC17" description="Confirm number of errors decreases by one if &#039;Address&#039; field gets populated with valid data" finished-at="2021-04-18T12:09:43Z" duration-ms="2323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC17 -->
+        <test-method signature="accCreationPageTC18()[pri:18, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:43Z" name="accCreationPageTC18" description="Confirm account creation impossible if &#039;City&#039; field gets populated with invalid characters" finished-at="2021-04-18T12:09:45Z" duration-ms="2553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC18 -->
+        <test-method signature="accCreationPageTC19()[pri:19, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:45Z" name="accCreationPageTC19" description="Confirm account creation impossible if &#039;City&#039; field exceeds character limit (64)" finished-at="2021-04-18T12:09:48Z" duration-ms="2579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC19 -->
+        <test-method signature="accCreationPageTC20()[pri:20, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:48Z" name="accCreationPageTC20" description="Confirm number of errors decreases by one if &#039;City&#039; field gets populated with valid data" finished-at="2021-04-18T12:09:50Z" duration-ms="2370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC20 -->
+        <test-method signature="accCreationPageTC21()[pri:21, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:50Z" name="accCreationPageTC21" description="Confirm number of errors decreases by one if &#039;United States&#039; gets selected from the &#039;Country&#039; dropdown list" finished-at="2021-04-18T12:09:53Z" duration-ms="2696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC21 -->
+        <test-method signature="accCreationPageTC22()[pri:22, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:53Z" name="accCreationPageTC22" description="Confirm number of errors decreases by one if anything other than &#039;-&#039; gets selected from the &#039;State&#039; dropdown list" finished-at="2021-04-18T12:09:55Z" duration-ms="2339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC22 -->
+        <test-method signature="accCreationPageTC23()[pri:23, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:55Z" name="accCreationPageTC23" description="Confirm account creation impossible if &#039;Zip/Postal Code&#039; field gets populated with characters other than numbers or the length of the number is other than 5" finished-at="2021-04-18T12:09:58Z" duration-ms="3105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC23 -->
+        <test-method signature="accCreationPageTC24()[pri:24, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:09:58Z" name="accCreationPageTC24" description="Confirm number of errors decreases by one if proper &#039;Zip/Postal Code gets inputted" finished-at="2021-04-18T12:10:01Z" duration-ms="2427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC24 -->
+        <test-method signature="accCreationPageTC25()[pri:25, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:01Z" name="accCreationPageTC25" description="Confirm account creation impossible if &#039;Additional information&#039; field exceeds character limit (300)" finished-at="2021-04-18T12:10:06Z" duration-ms="5677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC25 -->
+        <test-method signature="accCreationPageTC26()[pri:26, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:06Z" name="accCreationPageTC26" description="Confirm account creation impossible if &#039;Home phone&#039; field populated with invalid characters" finished-at="2021-04-18T12:10:09Z" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC26 -->
+        <test-method signature="accCreationPageTC27()[pri:27, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:09Z" name="accCreationPageTC27" description="Confirm account creation impossible if &#039;Home phone&#039; field exceeds character limit (32)" finished-at="2021-04-18T12:10:13Z" duration-ms="4149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC27 -->
+        <test-method signature="accCreationPageTC28()[pri:28, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:13Z" name="accCreationPageTC28" description="Confirm account creation impossible if &#039;Mobile phone&#039; field populated with invalid characters" finished-at="2021-04-18T12:10:15Z" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC28 -->
+        <test-method signature="accCreationPageTC29()[pri:29, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:15Z" name="accCreationPageTC29" description="Confirm account creation impossible if &#039;Mobile phone&#039; field exceeds character limit (32)" finished-at="2021-04-18T12:10:19Z" duration-ms="4065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC29 -->
+        <test-method signature="accCreationPageTC30()[pri:30, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:19Z" name="accCreationPageTC30" description="Confirm number of errors decreases by one if either or both &#039;Home phone&#039; or &#039;Mobile phone&#039; field gets populated with valid data" finished-at="2021-04-18T12:10:24Z" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC30 -->
+        <test-method signature="accCreationPageTC31()[pri:31, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:24Z" name="accCreationPageTC31" description="Confirm account creation impossible if &#039;Password&#039; field gets populated with less than 5 and more than 32 characters" finished-at="2021-04-18T12:10:26Z" duration-ms="2178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC31 -->
+        <test-method signature="accCreationPageTC32()[pri:32, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:26Z" name="accCreationPageTC32" description="Confirm account has been created if  &#039;Password&#039; field gets populated with more than 4 and less than 33 characters" finished-at="2021-04-18T12:10:31Z" duration-ms="4439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCreationPageTC32 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.AccountCreationPageTest@4f6ee6e4]" started-at="2021-04-18T12:10:31Z" name="tearDown" description="Home Page tests end" finished-at="2021-04-18T12:10:31Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pages.AccountCreationPageTest -->
+    </test> <!-- EYTask -->
+  </suite> <!-- Default Suite -->
+</testng-results>

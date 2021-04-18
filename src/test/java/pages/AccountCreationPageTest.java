@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.Random;
+
 public class AccountCreationPageTest {
 
     private WebDriver driver;
@@ -30,13 +32,33 @@ public class AccountCreationPageTest {
         String signInUrl = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
         driver.get(signInUrl);
         driver.manage().window().maximize();
-        driver.findElement(By.id("email_create")).sendKeys("abcfsdfdefgh@asdfbcde.pl");
+        driver.findElement(By.id("email_create")).sendKeys(generateRandomEmailAddress());
         driver.findElement(By.id("email_create")).sendKeys(Keys.RETURN);
     }
 
     @AfterClass(description = "Home Page tests end")
     public void tearDown() {
 //        driver.quit();
+    }
+
+    private String generateRandomEmailAddress() {
+        StringBuilder builder = new StringBuilder();
+        char[] chars = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't'
+                , 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+        int charsNumber1 = new Random().nextInt(30) + 1;
+        for (int i = 0; i < charsNumber1; i++) {
+            builder.append(chars[new Random().nextInt(chars.length)]);
+        }
+        builder.append("@");
+        int charsNumber2 = new Random().nextInt(20) + 1;
+        for (int i = 0; i < charsNumber2; i++) {
+            builder.append(chars[new Random().nextInt(chars.length)]);
+        }
+        builder.append(".");
+        for (int i = 0; i < 3; i++) {
+            builder.append(chars[new Random().nextInt(chars.length)]);
+        }
+        return builder.toString();
     }
 
     @Test(description = "Confirm account creation impossible if mandatory fields left without input data", priority = 1)
@@ -147,13 +169,12 @@ public class AccountCreationPageTest {
         Assert.assertTrue(page.containsText("An account using this email address has already been registered"));
     }
 
-    // TODO: 17.04.2021 find a way to change below email if it has been used to create an account after successful test suite
     @Test(description = "Confirm number of errors decreases by one if 'Email' field gets populated with valid data",
             priority = 11)
     public void accCreationPageTC11() {
         page.getEmailInputField().clear();
 
-        page.getEmailInputField().sendKeys("abcdsgdfdffg@asdfbcdsdfg.pl", Keys.RETURN);
+        page.getEmailInputField().sendKeys(generateRandomEmailAddress(), Keys.RETURN);
 
         Assert.assertTrue(page.containsText("There are 7 errors"));
     }

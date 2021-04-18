@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>TestNG:  EYTask</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EYTask</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 18 14:08:50 CEST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>100 seconds (100630 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC1()'><b>accCreationPageTC1</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if mandatory fields left without input data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC10()'><b>accCreationPageTC10</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Email' field gets populated with email address from an existing account</td>
+<td></td>
+<td>1</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC11()'><b>accCreationPageTC11</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'Email' field gets populated with valid data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC12()'><b>accCreationPageTC12</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm 'Sign up for our newsletter!' & 'Receive special offers from our partners!' checkboxes work properly - checking</td>
+<td></td>
+<td>0</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC13()'><b>accCreationPageTC13</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm 'Sign up for our newsletter!' & 'Receive special offers from our partners!' checkboxes work properly - unchecking</td>
+<td></td>
+<td>0</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC14()'><b>accCreationPageTC14</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Company' field exceeds character limit (64)</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC15()'><b>accCreationPageTC15</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Address' field gets populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC16()'><b>accCreationPageTC16</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Address' field exceeds character limit (64)</td>
+<td></td>
+<td>3</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC17()'><b>accCreationPageTC17</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'Address' field gets populated with valid data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC18()'><b>accCreationPageTC18</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'City' field gets populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC19()'><b>accCreationPageTC19</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'City' field exceeds character limit (64)</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC2()'><b>accCreationPageTC2</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm 'Title' radio buttons work properly</td>
+<td></td>
+<td>0</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC20()'><b>accCreationPageTC20</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'City' field gets populated with valid data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC21()'><b>accCreationPageTC21</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'United States' gets selected from the 'Country' dropdown list</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC22()'><b>accCreationPageTC22</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if anything other than '-' gets selected from the 'State' dropdown list</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC23()'><b>accCreationPageTC23</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Zip/Postal Code' field gets populated with characters other than numbers or the length of the number is other than 5</td>
+<td></td>
+<td>3</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC24()'><b>accCreationPageTC24</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if proper 'Zip/Postal Code gets inputted</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC25()'><b>accCreationPageTC25</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Additional information' field exceeds character limit (300)</td>
+<td></td>
+<td>5</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC26()'><b>accCreationPageTC26</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Home phone' field populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC27()'><b>accCreationPageTC27</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Home phone' field exceeds character limit (32)</td>
+<td></td>
+<td>4</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC28()'><b>accCreationPageTC28</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Mobile phone' field populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC29()'><b>accCreationPageTC29</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Mobile phone' field exceeds character limit (32)</td>
+<td></td>
+<td>4</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC3()'><b>accCreationPageTC3</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'First name' field populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC30()'><b>accCreationPageTC30</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if either or both 'Home phone' or 'Mobile phone' field gets populated with valid data</td>
+<td></td>
+<td>5</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC31()'><b>accCreationPageTC31</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Password' field gets populated with less than 5 and more than 32 characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC32()'><b>accCreationPageTC32</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account has been created if  'Password' field gets populated with more than 4 and less than 33 characters</td>
+<td></td>
+<td>4</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC4()'><b>accCreationPageTC4</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'First name' field exceeds character limit (32)</td>
+<td></td>
+<td>3</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC5()'><b>accCreationPageTC5</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'First name' field gets populated with valid data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC6()'><b>accCreationPageTC6</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Last name' field gets populated with invalid characters</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC7()'><b>accCreationPageTC7</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Last name' field exceeds character limit (32)</td>
+<td></td>
+<td>3</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC8()'><b>accCreationPageTC8</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm number of errors decreases by one if 'Last name' field gets populated with valid data</td>
+<td></td>
+<td>2</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+<tr>
+<td title='pages.AccountCreationPageTest.accCreationPageTC9()'><b>accCreationPageTC9</b><br>Test class: pages.AccountCreationPageTest<br>Test method: Confirm account creation impossible if 'Email' field gets populated with invalid email address</td>
+<td></td>
+<td>1</td>
+<td>pages.AccountCreationPageTest@4f6ee6e4</td></tr>
+</table><p>
+</body>
+</html>

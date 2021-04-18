@@ -95,9 +95,7 @@ public class AccountCreationPage {
         registerButton.click();
     }
 
-    // TODO: 17.04.2021 the below 4 methods need to be compressed somehow into one, an overloaded one perhaps
-
-    public void selectDayOfBirth(int day, String month, int year) {
+    public void selectDateOfBirth(int day, String month, int year) {
         Select selectDay = new Select(dayOfBirthDropdown);
         selectDay.selectByVisibleText(String.valueOf(day));
         Select selectMonth = new Select(monthOfBirthDropdown);
