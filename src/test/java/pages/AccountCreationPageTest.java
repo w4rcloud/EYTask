@@ -38,7 +38,7 @@ public class AccountCreationPageTest {
 
     @AfterClass(description = "Home Page tests end")
     public void tearDown() {
-//        driver.quit();
+        driver.quit();
     }
 
     private String generateRandomEmailAddress() {
